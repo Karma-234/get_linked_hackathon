@@ -3,3 +3,5 @@ packages:
 
 packages-dev: 
 	flutter pub add build_runner mobx_codegen auto_route_generator chopper_generator --dev
+build: 
+	dart run build_runner build --delete-conflicting-outputs

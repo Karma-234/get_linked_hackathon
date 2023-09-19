@@ -13,7 +13,7 @@ dependencies:
   flutter_mobx: ^2.0.6+5
   flutter_screenutil: ^5.9.0
   google_fonts: ^6.0.0
-  hive: ^2.2.3
+  hive_flutter: ^1.1.0
   json_annotation: ^4.8.1
   json_serializable: ^6.7.1
   logging: ^1.2.0
@@ -30,3 +30,25 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/pngs/
+    # - assets/images/svgs/
+    # - assets/images/gifs/
+
+  fonts:
+    - family: Clash Display
+      fonts:
+        - asset: assets/fonts/ClashDisplay/Bold.otf
+          weight: 600
+        - asset: assets/fonts/ClashDisplay/Semibold.otf
+          weight: 500
+        - asset: assets/fonts/ClashDisplay/Medium.otf
+          weight: 400
+        - asset: assets/fonts/ClashDisplay/Regular.otf
+          weight: 300
+        - asset: assets/fonts/ClashDisplay/Light.otf
+          weight: 200
+        - asset: assets/fonts/ClashDisplay/Extralight.otf
+          weight: 100
