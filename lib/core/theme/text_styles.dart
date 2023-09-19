@@ -4,7 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 
 class AppTextstyles {
   static TextStyle clashDisplay({
-    String fontFamily = 'Clash Display',
     double fontSize = 28,
     double textHeight = 32,
     double? letterSpacing,
@@ -17,7 +16,7 @@ class AppTextstyles {
     TextDecorationStyle? decorationStyle,
   }) =>
       TextStyle(
-        fontFamily: fontFamily,
+        fontFamily: 'Clash Display',
         letterSpacing: letterSpacing?.spMin,
         fontSize: fontSize.spMin,
         height: (textHeight / fontSize).spMin,

@@ -12,8 +12,8 @@ import 'package:auto_route/auto_route.dart' as _i2;
 import 'package:get_linked_hackathon/views/landing_page/landing_page.dart'
     as _i1;
 
-abstract class $Router extends _i2.RootStackRouter {
-  $Router({super.navigatorKey});
+abstract class $AppRouter extends _i2.RootStackRouter {
+  $AppRouter({super.navigatorKey});
 
   @override
   final Map<String, _i2.PageFactory> pagesMap = {
