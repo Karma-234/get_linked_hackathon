@@ -14,6 +14,7 @@ class AppTextstyles {
     TextDecoration? decoration,
     Color decorationColor = Colors.white,
     TextDecorationStyle? decorationStyle,
+    FontStyle? fontStyle,
   }) =>
       TextStyle(
         fontFamily: 'Clash Display',
@@ -27,6 +28,7 @@ class AppTextstyles {
         decorationThickness: decorationThickness,
         decorationColor: decorationColor,
         decorationStyle: decorationStyle,
+        fontStyle: fontStyle,
       );
 
   static TextStyle inter({
@@ -40,18 +42,19 @@ class AppTextstyles {
     TextDecoration? decoration,
     Color decorationColor = Colors.white,
     TextDecorationStyle? decorationStyle,
+    FontStyle? fontStyle,
   }) =>
       GoogleFonts.inter(
-        letterSpacing: letterSpacing?.spMin,
-        fontSize: fontSize.spMin,
-        height: (textHeight / fontSize).spMin,
-        fontWeight: weight,
-        color: textColor,
-        decorationThickness: decorationThickness,
-        decoration: decoration,
-        decorationColor: decorationColor,
-        decorationStyle: decorationStyle,
-      );
+          letterSpacing: letterSpacing?.spMin,
+          fontSize: fontSize.spMin,
+          height: (textHeight / fontSize).spMin,
+          fontWeight: weight,
+          color: textColor,
+          decorationThickness: decorationThickness,
+          decoration: decoration,
+          decorationColor: decorationColor,
+          decorationStyle: decorationStyle,
+          fontStyle: fontStyle);
 
   static TextStyle montserrat({
     double fontSize = 28,
@@ -64,16 +67,42 @@ class AppTextstyles {
     TextDecoration? decoration,
     Color decorationColor = Colors.white,
     TextDecorationStyle? decorationStyle,
+    FontStyle? fontStyle,
   }) =>
       GoogleFonts.montserrat(
-        letterSpacing: letterSpacing?.spMin,
-        fontSize: fontSize.spMin,
-        height: (textHeight / fontSize).spMin,
-        fontWeight: weight,
-        color: textColor,
-        decorationThickness: decorationThickness,
-        decoration: decoration,
-        decorationColor: decorationColor,
-        decorationStyle: decorationStyle,
-      );
+          letterSpacing: letterSpacing?.spMin,
+          fontSize: fontSize.spMin,
+          height: (textHeight / fontSize).spMin,
+          fontWeight: weight,
+          color: textColor,
+          decorationThickness: decorationThickness,
+          decoration: decoration,
+          decorationColor: decorationColor,
+          decorationStyle: decorationStyle,
+          fontStyle: fontStyle);
+
+  static TextStyle unica({
+    double fontSize = 28,
+    double textHeight = 32,
+    double? decorationThickness,
+    double? letterSpacing,
+    FontWeight weight = FontWeight.w700,
+    Color textColor = Colors.white,
+    TextOverflow? overflow,
+    TextDecoration? decoration,
+    Color decorationColor = Colors.white,
+    TextDecorationStyle? decorationStyle,
+    FontStyle? fontStyle,
+  }) =>
+      GoogleFonts.unicaOne(
+          letterSpacing: letterSpacing?.spMin,
+          fontSize: fontSize.spMin,
+          height: (textHeight / fontSize).spMin,
+          fontWeight: weight,
+          color: textColor,
+          decorationThickness: decorationThickness,
+          decoration: decoration,
+          decorationColor: decorationColor,
+          decorationStyle: decorationStyle,
+          fontStyle: fontStyle);
 }

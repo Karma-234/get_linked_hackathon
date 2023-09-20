@@ -18,7 +18,9 @@ class MainApp extends StatelessWidget {
           theme: ThemeData(inputDecorationTheme: AppTheme.inputDecor),
           builder: (context, child) => MediaQuery(
             data: MediaQuery.of(context).copyWith(textScaleFactor: 1),
-            child: Container(),
+            child: Container(
+              child: child,
+            ),
           ),
         );
       },
