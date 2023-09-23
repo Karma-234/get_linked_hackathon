@@ -155,6 +155,6 @@ class PrivacyAndPolicySection extends StatelessWidget {
         ),
         24.verticalSpace,
       ],
-    );
+    ).addPadding(customPadding: EdgeInsets.symmetric(horizontal: 26.w));
   }
 }

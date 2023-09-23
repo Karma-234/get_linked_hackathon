@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get_linked_hackathon/core/utils/extensions.dart';
+import 'package:get_linked_hackathon/shared_components/back_drop.dart';
 
 import '../../../core/theme/text_styles.dart';
 import '../../../core/utils/constants.dart';
@@ -13,29 +14,33 @@ class MobileGuidelinesSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Image.asset(
-          'sitting-lady'.png,
-          height: 382.h,
-          fit: BoxFit.fill,
-          filterQuality: FilterQuality.high,
-        ).addPadding(
-          customPadding: EdgeInsets.symmetric(horizontal: 40.w),
-        ),
-        const SectionHeaderText(),
-        Text(
-          LandingPageConstants.ruleAndGuidelines,
-          textAlign: TextAlign.center,
-          style: AppTextstyles.montserrat(
-            fontSize: 13,
-            textHeight: 27,
+    return AppBackDrop(
+      backDropHeight: 750,
+      top: 0,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Image.asset(
+            'sitting-lady'.png,
+            height: 382.h,
+            fit: BoxFit.fill,
+            filterQuality: FilterQuality.high,
+          ).addPadding(
+            customPadding: EdgeInsets.symmetric(horizontal: 40.w),
           ),
-        ).addPadding(
-          customPadding: EdgeInsets.symmetric(horizontal: 40.w),
-        )
-      ],
+          const SectionHeaderText(),
+          Text(
+            LandingPageConstants.ruleAndGuidelines,
+            textAlign: TextAlign.center,
+            style: AppTextstyles.montserrat(
+              fontSize: 13,
+              textHeight: 27,
+            ),
+          ).addPadding(
+            customPadding: EdgeInsets.symmetric(horizontal: 40.w),
+          )
+        ],
+      ),
     );
   }
 }
