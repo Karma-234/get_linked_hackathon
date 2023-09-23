@@ -11,6 +11,7 @@ class AppPrimaryButton extends StatelessWidget {
   final double buttonHeight;
   final double buttonWidth;
   final VoidCallback? onPress;
+  final String text;
   const AppPrimaryButton({
     super.key,
     this.gradient,
@@ -19,6 +20,7 @@ class AppPrimaryButton extends StatelessWidget {
     this.buttonHeight = 53,
     this.buttonWidth = double.infinity,
     this.onPress,
+    this.text = 'Register',
   });
 
   @override
@@ -45,7 +47,7 @@ class AppPrimaryButton extends StatelessWidget {
         ),
         child: Center(
           child: Text(
-            'Register',
+            text,
             style: AppTextstyles.montserrat(
               fontSize: textSize,
               textHeight: textHeight,
