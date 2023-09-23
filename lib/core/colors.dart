@@ -6,4 +6,5 @@ class AppColors {
   static const p3 = Color(0xFFD434FE);
   static const p4 = Color(0xFFFF26B9);
   static const p5 = Color(0xFFFE34B9);
+  static const p6 = Color(0xFFA866FD);
 }

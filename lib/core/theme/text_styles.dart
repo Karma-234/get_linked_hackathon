@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get_linked_hackathon/core/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppTextstyles {
@@ -107,11 +108,11 @@ class AppTextstyles {
           fontStyle: fontStyle);
 
   static TextStyle tommmyOutline({
-    double fontSize = 28,
-    double textHeight = 32,
+    double fontSize = 40,
+    double textHeight = 28,
     double? letterSpacing,
-    FontWeight weight = FontWeight.w700,
-    Color textColor = Colors.white,
+    FontWeight weight = FontWeight.w500,
+    Color textColor = AppColors.p6,
     TextOverflow? overflow,
     double? decorationThickness,
     TextDecoration? decoration,
