@@ -6,10 +6,12 @@ import '../../core/theme/text_styles.dart';
 class SectionHeaderText extends StatelessWidget {
   final String? whitetText;
   final String? coloredText;
+  final TextAlign align;
   const SectionHeaderText({
     super.key,
     this.whitetText,
     this.coloredText,
+    this.align = TextAlign.center,
   });
 
   @override
@@ -24,7 +26,7 @@ class SectionHeaderText extends StatelessWidget {
           ),
         ],
       ),
-      textAlign: TextAlign.center,
+      textAlign: align,
       style: AppTextstyles.clashDisplay(
         fontSize: 20,
         textHeight: 27,

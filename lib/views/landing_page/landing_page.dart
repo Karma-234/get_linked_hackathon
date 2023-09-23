@@ -1,6 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:get_linked_hackathon/core/colors.dart';
 import 'package:get_linked_hackathon/core/theme/text_styles.dart';
 import 'package:get_linked_hackathon/core/utils/constants.dart';
@@ -10,6 +11,7 @@ import 'package:get_linked_hackathon/shared_components/buttons/app_primary_butto
 import '../../shared_components/text/section_header_text.dart';
 import 'widgets/astro_boy_image.dart';
 import 'widgets/countdown_widget.dart';
+import 'widgets/footer_section.dart';
 import 'widgets/innovation_title.dart';
 import 'widgets/mobile_app_bar.dart';
 import 'widgets/mobile_criteria_section.dart';
@@ -145,6 +147,7 @@ class _LandingPageViewState extends State<LandingPageView> {
               ),
               24.verticalSpace,
               const PrivacyAndPolicySection(),
+              const FooterSection()
             ],
           ),
         ),

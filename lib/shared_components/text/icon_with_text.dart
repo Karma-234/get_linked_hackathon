@@ -8,16 +8,22 @@ class AppIconWithText extends StatelessWidget {
   final String iconUrl;
   final String text;
   final Widget? separator;
+  final TextBaseline? textBaseline;
+  final CrossAxisAlignment crossAxisAlignment;
   const AppIconWithText({
     super.key,
     this.iconUrl = 'list-item',
     this.text = '',
     this.separator,
+    this.crossAxisAlignment = CrossAxisAlignment.center,
+    this.textBaseline,
   });
 
   @override
   Widget build(BuildContext context) {
     return Row(
+      crossAxisAlignment: crossAxisAlignment,
+      textBaseline: textBaseline,
       children: [
         SvgPicture.asset(iconUrl.svg),
         separator ?? 14.horizontalSpace,

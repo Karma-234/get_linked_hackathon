@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get_linked_hackathon/core/colors.dart';
+import 'package:get_linked_hackathon/core/utils/constants.dart';
 import 'package:get_linked_hackathon/core/utils/extensions.dart';
 
 import '../../../core/theme/text_styles.dart';
@@ -36,6 +38,12 @@ class MobileFaQSection extends StatelessWidget {
           textAlign: TextAlign.center,
           style: AppTextstyles.montserrat(
               fontSize: 12, textHeight: 28, weight: FontWeight.w400),
+        ),
+        26.verticalSpace,
+        ...LandingPageConstants.faqList.map(
+          (e) => FaqTile(
+            text: e,
+          ),
         ),
         26.verticalSpace,
         SizedBox.fromSize(
@@ -98,6 +106,45 @@ class MobileFaQSection extends StatelessWidget {
         customPadding: EdgeInsets.symmetric(
           horizontal: 38.w,
         ),
+      ),
+    );
+  }
+}
+
+class FaqTile extends StatelessWidget {
+  final String text;
+  const FaqTile({super.key, this.text = ''});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.symmetric(vertical: 9.h),
+      decoration: const BoxDecoration(
+        border: Border(
+          bottom: BorderSide(
+            color: AppColors.p3,
+          ),
+        ),
+      ),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          Expanded(
+            child: Text(
+              text,
+              style: AppTextstyles.montserrat(
+                fontSize: 12,
+                textHeight: 18,
+                weight: FontWeight.w400,
+              ),
+            ),
+          ),
+          16.horizontalSpace,
+          Image.asset(
+            'expand'.png,
+            height: 19.h,
+          )
+        ],
       ),
     );
   }

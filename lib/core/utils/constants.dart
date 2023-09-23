@@ -47,4 +47,20 @@ policy.
     'The Standard License grants you a non-exclusive right to navigate and register for our event',
     'You are licensed to use the item available at any free source sites, for your project developement'
   ];
+  static const footerSummary = """
+Getlinked Tech Hackathon is a technology
+innovation program established by a group 
+of organizations with the aim of showcasing 
+young and talented individuals in the field 
+of technology
+""";
+
+  static const faqList = [
+    "Can I work on a project I started before the hackathon?",
+    "What happens if I need help during the hackathon?",
+    "What happens if I don't have an idea for a project?",
+    "Can I join a team or do I have to come with one?",
+    "What happens after the hackathon ends",
+    "Can I work on a project I started before the hackathon?",
+  ];
 }
