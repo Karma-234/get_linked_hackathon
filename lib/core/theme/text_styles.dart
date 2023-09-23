@@ -106,28 +106,31 @@ class AppTextstyles {
           decorationStyle: decorationStyle,
           fontStyle: fontStyle);
 
-  static TextStyle madeTommy({
+  static TextStyle tommmyOutline({
     double fontSize = 28,
     double textHeight = 32,
-    double? decorationThickness,
     double? letterSpacing,
     FontWeight weight = FontWeight.w700,
     Color textColor = Colors.white,
     TextOverflow? overflow,
+    double? decorationThickness,
     TextDecoration? decoration,
     Color decorationColor = Colors.white,
     TextDecorationStyle? decorationStyle,
     FontStyle? fontStyle,
   }) =>
-      GoogleFonts.unicaOne(
-          letterSpacing: letterSpacing?.spMin,
-          fontSize: fontSize.spMin,
-          height: (textHeight / fontSize).spMin,
-          fontWeight: weight,
-          color: textColor,
-          decorationThickness: decorationThickness,
-          decoration: decoration,
-          decorationColor: decorationColor,
-          decorationStyle: decorationStyle,
-          fontStyle: fontStyle);
+      TextStyle(
+        fontFamily: 'Made Tommy Outline',
+        letterSpacing: letterSpacing?.spMin,
+        fontSize: fontSize.spMin,
+        height: (textHeight / fontSize).spMin,
+        fontWeight: weight,
+        color: textColor,
+        overflow: overflow,
+        decoration: decoration,
+        decorationThickness: decorationThickness,
+        decorationColor: decorationColor,
+        decorationStyle: decorationStyle,
+        fontStyle: fontStyle,
+      );
 }

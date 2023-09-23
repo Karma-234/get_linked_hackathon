@@ -53,3 +53,20 @@ flutter:
           weight: 200
         - asset: assets/fonts/ClashDisplay/Extralight.otf
           weight: 100
+
+    - family: Made Tommy Outline
+      fonts:
+        - asset: assets/fonts/MadeTommy/BlackOutline.otf
+          weight: 700
+        - asset: assets/fonts/MadeTommy/ExtraBoldOutline.otf
+          weight: 600
+        - asset: assets/fonts/MadeTommy/BoldOutline.otf
+          weight: 500
+        - asset: assets/fonts/MadeTommy/MediumOutline.otf
+          weight: 400
+        - asset: assets/fonts/MadeTommy/RegularOutline.otf
+          weight: 300
+        - asset: assets/fonts/MadeTommy/LightOutline.otf
+          weight: 200
+        - asset: assets/fonts/MadeTommy/ThinOutline.otf
+          weight: 100
