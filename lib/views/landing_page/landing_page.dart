@@ -18,6 +18,7 @@ import 'widgets/mobile_faq_section.dart';
 import 'widgets/mobile_guidelines_section.dart';
 import 'widgets/mobile_timeline_section.dart';
 import 'widgets/partners_sponsors_section.dart';
+import 'widgets/privacy_and_policy_section.dart';
 import 'widgets/prizes_and_rewards_section.dart';
 
 @RoutePage()
@@ -143,10 +144,7 @@ class _LandingPageViewState extends State<LandingPageView> {
                 color: Color.fromRGBO(255, 255, 255, 0.18),
               ),
               24.verticalSpace,
-              SectionHeaderText(
-                whitetText: 'Privacy Policy and\n',
-                coloredText: 'Terms',
-              )
+              const PrivacyAndPolicySection(),
             ],
           ),
         ),
