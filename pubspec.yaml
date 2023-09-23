@@ -19,6 +19,7 @@ dependencies:
   json_serializable: ^6.7.1
   logging: ^1.2.0
   mobx: ^2.2.0
+  timeline_tile: ^2.0.0
 
 dev_dependencies:
   flutter_test:

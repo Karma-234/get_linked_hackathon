@@ -63,4 +63,21 @@ of technology
     "What happens after the hackathon ends",
     "Can I work on a project I started before the hackathon?",
   ];
+
+  static const timeLineHeader = [
+    "Hackathon Announcement",
+    "Teams Registration begins",
+    "Teams Registration ends",
+    "Announcement of the accepted teams and ideas",
+    "Getlinked Hackathon 1.0 Offically Begins",
+    "Demo Day",
+  ];
+  static const timeLineContent = [
+    "The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register",
+    "Interested teams can now show their interest in the getlinked tech hackathon 1.0 2023 by proceeding to register",
+    "Interested Participants are no longer Allowed to register",
+    "All teams whom idea has been accepted into getlinked tech hackathon 1.0 2023 are formally announced",
+    "Accepted teams can now proceed to build their ground breaking skill driven solutions",
+    "Teams get the opportunity to pitch their projects to judges. The winner of the hackathon will also be announced on this day"
+  ];
 }

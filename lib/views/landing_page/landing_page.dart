@@ -1,7 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:get_linked_hackathon/core/colors.dart';
 import 'package:get_linked_hackathon/core/theme/text_styles.dart';
 import 'package:get_linked_hackathon/core/utils/constants.dart';
@@ -147,7 +146,7 @@ class _LandingPageViewState extends State<LandingPageView> {
               ),
               24.verticalSpace,
               const PrivacyAndPolicySection(),
-              const FooterSection()
+              const FooterSection(),
             ],
           ),
         ),
